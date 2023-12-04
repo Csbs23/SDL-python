@@ -10,3 +10,12 @@ d={'id':[1,2,5,6],
 b=pd.DataFrame(d)
 df=pd.merge(a,b,on='id',how='inner')
 df
+
+df=pd.merge(a,b,on='id',how='left')
+df
+df=pd.merge(a,b,on='id',how='right')
+df
+df=pd.merge(a,b,on='id',how='outer')
+df
+
+
